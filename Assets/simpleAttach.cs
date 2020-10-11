@@ -7,6 +7,7 @@ using Valve.VR.InteractionSystem;
 public class simpleAttach : MonoBehaviour
 {
     private Interactable interactable;
+    public GameObject obj;
     
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class simpleAttach : MonoBehaviour
     private void OnHandOverEnd(Hand hand)
     {
         hand.HideGrabHint();
+       
 
     }
     private void HandHoverUpdate(Hand hand)
@@ -38,7 +40,10 @@ public class simpleAttach : MonoBehaviour
         {
             hand.DetachObject(gameObject);
             hand.HoverUnlock(interactable);
+         
         }
     }
+
+  
 
 }
