@@ -49,7 +49,7 @@ public class openCloset : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (holdingHandle)
         {
